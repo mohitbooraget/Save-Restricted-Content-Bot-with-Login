@@ -12,10 +12,10 @@ from dotenv import load_dotenv
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 load_dotenv(override=True)
 
-API_ID = int(os.getenv("TG_API_ID", "5120"))
-API_HASH = os.getenv("TG_API_HASH", "1fda88a5d1de478bce198e")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "token")
-MONGODB_URL = os.getenv("MONGODB_URL", "mongouri")
+API_ID = int(os.getenv("TG_API_ID", "15344356"))
+API_HASH = os.getenv("TG_API_HASH", "69d343189cf755ebe76a6b07f5578402")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "6493917299:AAH0XFz4bvGO4c8Glce3F76BD9oLrIl_M_o")
+MONGODB_URL = os.getenv("MONGODB_URL", "mongodb+srv://mendaxtelegram:<y@Va$G_y22rihWt>@atlascluster.0zrjy0r.mongodb.net/")
 BOT_USERNAME = None
 bot = TelegramClient('bot', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 mongo_client = MongoClient(MONGODB_URL, server_api=ServerApi('1'))
